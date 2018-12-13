@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  &__sheet {
+    flex: 1 1 auto;
+  }
+  &__controls {
+    flex: 0 1 33.33%;
+    max-width: 480px;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    border-left: 1px solid #eee;
+    background: whitesmoke;
+    font: caption;
+    @media only print {
+      display: none;
+    }
+  }
+}

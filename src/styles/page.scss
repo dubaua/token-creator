@@ -1,0 +1,35 @@
+.page {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &__pair {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__item {
+    position: relative;
+    width: 118px;
+    height: 171px;
+    border-top-left-radius: 50% 32px;
+    border-top-right-radius: 50% 32px;
+    box-shadow: inset 0 0 0 1px lightgray;
+    background-repeat: no-repeat;
+    transition: background-position 0.1s ease;
+    overflow: hidden;
+  }
+
+  &__badge {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 1;
+    font: caption;
+    background-color: white;
+  }
+}

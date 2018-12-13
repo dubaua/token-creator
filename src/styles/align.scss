@@ -1,0 +1,42 @@
+@media only screen {
+  .align {
+    $block: &;
+    position: relative;
+    &__scene {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__icon {
+      fill: none;
+    }
+
+    &__area {
+      width: 33.33%;
+      height: 33.33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &:hover {
+        background: rgba(0, 128, 0, 0.33);
+
+        & #{$block}__icon {
+          fill: lime;
+        }
+      }
+      &--active {
+        & #{$block}__icon {
+          fill: lime;
+        }
+      }
+    }
+
+
+  }
+}

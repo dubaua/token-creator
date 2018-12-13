@@ -1,0 +1,22 @@
+@media only screen {
+  .drop-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    box-sizing: border-box;
+    border: 3px dashed;
+    border-radius: 0.5em;
+    font: message-box;
+    color: lightgray;
+    &:before {
+      content: "Drop images here";
+      display: block;
+    }
+
+    &--highlighted {
+      background: lightgreen;
+      color: lightseagreen;
+    }
+  }
+}

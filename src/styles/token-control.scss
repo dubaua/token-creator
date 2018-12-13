@@ -1,0 +1,23 @@
+@media only screen {
+  .token-control {
+    display: flex;
+    margin-top: 1em;
+
+    &__preview {
+      flex: 0 1 100px;
+      max-width: 100px;
+      align-self: flex-start;
+    }
+
+    &__image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    &__actions {
+      flex: 1 1 auto;
+      margin-left: 1em;
+    }
+  }
+}

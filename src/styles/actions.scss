@@ -1,0 +1,30 @@
+@media only screen {
+  .actions {
+    &__row {
+      display: flex;
+      & + & {
+        margin-top: 0.5em;
+      }
+    }
+    &__count {
+      display: block;
+      margin: 0 0.5em;
+    }
+    &__label {
+      margin-right: 0.5em;
+      cursor: pointer;
+      color: grey;
+      border-bottom: 1px dashed transparent;
+      &--active {
+        color: black;
+        border-color: black;
+        cursor: default;
+      }
+    }
+    &__button {
+      &--end {
+        margin-left: auto;
+      }
+    }
+  }
+}
