@@ -1,12 +1,17 @@
 .app {
-  display: flex;
-  min-height: 100vh;
   &__sheet {
-    flex: 1 1 auto;
+    margin-right: 480px;
+    @media only print {
+      margin-right: 0;
+    }
   }
   &__controls {
-    flex: 0 1 33.33%;
-    max-width: 480px;
+    position: fixed;
+    width: 480px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
     padding: 1em 2em;
     box-sizing: border-box;
     border-left: 1px solid #eee;

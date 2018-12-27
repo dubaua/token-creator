@@ -3,6 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
 
   &__pair {
     display: flex;
@@ -15,21 +17,39 @@
     height: 171px;
     border-top-left-radius: 50% 32px;
     border-top-right-radius: 50% 32px;
-    box-shadow: inset 0 0 0 1px lightgray;
+    // box-shadow: inset 0 0 0 1px lightgray;
     background-repeat: no-repeat;
     transition: background-position 0.1s ease;
     overflow: hidden;
+    @media only print {
+      width: 2cm;
+      height: 3cm;
+      border-top-left-radius: 50% .5cm;
+      border-top-right-radius: 50% .5cm;
+    }
   }
 
   &__badge {
     position: absolute;
     right: 1em;
     top: 1em;
-    width: 16px;
-    height: 16px;
+    width: 1.4em;
+    height: 1em;
+    padding: .2em 0;
     text-align: center;
     line-height: 1;
     font: caption;
     background-color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    @media only print {
+      right: .1cm;
+      top: .1cm;
+      font-size: .5cm;
+      width: .5cm;
+      height: .5cm;
+      padding: .1cm 0;
+    }
   }
+
 }
